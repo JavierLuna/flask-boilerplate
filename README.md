@@ -1,7 +1,7 @@
 # Flask-Boilerplate
 My current flask-app skeleton. Works with Python 3.
 
-##Instructions
+## Instructions
 I'm gonna try to bring you guys a one-liner, but until then there is this script hosted in a public [Gist](https://gist.github.com/JavierLuna/494cd8694498346e287b13d5d0733797)
 
 You have to have ```git``` installed as well as ```python3``` for this to work.
@@ -32,7 +32,7 @@ Then, it will create and install all my favorite libraries! For your only amusem
 
 I'll explain the project tree in the next section
 
-##Behold! The project tree
+## Behold! The project tree
 This, right here, is the project tree my marvelous script will create for you.
 But don't be fooled, it isn't a real tree. It is an ASCII representation of the structure of the project.
 
@@ -90,7 +90,7 @@ But don't be fooled, it isn't a real tree. It is an ASCII representation of the 
 └── wsgi.py
 </pre>
 
-###The concept behind this skeleton
+### The concept behind this skeleton
 I really like python for a bunch of reasons but the most important one is it's philosophy. It is simple, concise and _explicit_.
 
 I tried other web frameworks like [Django](https://www.djangoproject.com/), but find them very confusing as they do a lot of heavy lifting behind the scenes, often hiding the logic behind it. Don't get me wrong, I like the project and know they have fantastic documentation, but the fact that I have to go looking at docs to get a grasp of what's going on in my own project really slows me down. And I like things very explicit.
@@ -105,30 +105,30 @@ With this said, please allow me to introduce... my skeleton.
 
 In the root of the directory we find several packages and files:
 
-###Config.py
+### Config.py
 There goes our configuration file. Here we can find all the classes containing the different configuration settings we'll use.
 
 Personally, I like my whole team having the same kind of configuration, so I only placed three different settings: **Development, Testing and Production**. All three configuration extends a very interesting method, **init_app**, which receives the app at the beginning of the configuration process, so you can execute custom code depending on the configuration selected. For example, running Sentry only in Production.
 
 
-###Manage.py
+### Manage.py
 Okay, maybe I've robbed this one from Django. It is so handy to have a manage script though!
 The five commands we are going to use the most are:
 
-#####Database and migration repository creation
+##### Database and migration repository creation
 ```
 python manage.py db init
 ```
-#####Create a migration from existing models and database
+##### Create a migration from existing models and database
 ```
 python manage.py db migrate
 ```
-#####Apply pending migrations to database
+##### Apply pending migrations to database
 ```
 python manage.py db upgrate
 ```
 
-#####Runs the server in localhost:5000
+##### Runs the server in localhost:5000
 ```
 python manage.py runserver
 ```
@@ -141,7 +141,7 @@ python manage.py shell
 The thing about this last one is that you can load whatever variables you want beforehand into the shell session. It is so useful to have already in context models like User...
 
 
-###App directory
+### App directory
 Home of our beloved web app! This point is the big one, so I'll try to get straight to the point.
 
 In the __init__.py file we can find the initialization of the application. First, we declare our libraries and then in our **create_app** factory we attach all things to the app object. This makes scalability much easier.
@@ -171,10 +171,10 @@ Now comes the interesting part:
 
 Also, in the api's __init__.py we find initialization of stuff like auth by token etc.
 
-####IMPORTANT TO REMEMBER: ALWAYS LOAD YOUR MODULES OR FILES IN THEIR PARENT'S __init__.py
+#### IMPORTANT TO REMEMBER: ALWAYS LOAD YOUR MODULES OR FILES IN THEIR PARENT'S __init__.py
 
 
-###Tests
+### Tests
 Y'all like tests too much to not cover them in my skeleton.
 
 Just kidding, I've only coded a couple of tests as examples because this is really a boilerplate, and tests means more code to remove after the bootstrapping.
@@ -184,12 +184,12 @@ One thing that is cool about this tests is that they run on an in-memory sqlite 
 I've coded a little API test client because I don't know anything better. Please, enlighten me!
 
 
-###wsgi.py
+### wsgi.py
 This teeny tiny script is used to deploy later on. Let it be!
 
 
 
-##Farewell
+## Farewell
 I hope you like my project tree. I really do!
 If not, you can always message me with the one you like so I could learn from you!
 
