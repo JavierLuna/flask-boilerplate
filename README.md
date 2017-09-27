@@ -28,7 +28,7 @@ And then, finally, run it. Seriously, you deserve it!
 
 The script will request *His Dudeness* a name for *His* project and then a path to the python executable you want to use (no biggies about that, it will create such a nice virtual environment, you won't believe)
 
-Then, it will create and install all my favourite libraries! For your only amusement!
+Then, it will create and install all my favorite libraries! For your only amusement!
 
 I'll explain the project tree in the next section
 
@@ -97,9 +97,9 @@ I tried other web frameworks like [Django](https://www.djangoproject.com/), but 
 
 Furthermore, I find several things very wrong about Django's tree (let me rant a little):
 
-* **Models must be separated from all views and "serializers"**: Ladies and gentleman, if it follows the MVC pattern, why are they so tied down? Let them models breathe!. This leads to the development of monolithics web applications which is very bad for scaling. Even with all your fancy whale-swarm thingies.
+* **Models must be separated from all views and "serializers"**: Ladies and gentleman, if it follows the MVC pattern, why are they so tied down? Let them models breathe!. This leads to the development of monolithic web applications which is very bad for scaling. Even with all your fancy whale-swarm thingies.
 * **Web routes' level of abstraction is too high:** I get you are going for the clean look and separate a bit routes from code, but maybe this slows down the general development or debugging of the app or the beginners learning curve to the project (in addition of the steeper django's learning curve).
-* **The whole tree is so rigid and strict!:** Due to all hidden heavylifting we get ourselves stuck with a default project-tree wich doesn't really give us much freedom to play arround. This is good if you like to boost your ego writting programming articles at [Medium](https://medium.com/) about how you did api versioning _right_ in Django, but if this ain't your thing it can be a little frustrating. The tree that doesn't bend, breaks. Be flexible, be like bamboo.
+* **The whole tree is so rigid and strict!:** Due to all hidden heavy lifting we get ourselves stuck with a default project-tree which doesn't really give us much freedom to play around. This is good if you like to boost your ego writing programming articles at [Medium](https://medium.com/) about how you did api versioning _right_ in Django, but if this ain't your thing it can be a little frustrating. The tree that doesn't bend, breaks. Be flexible, be like bamboo.
 
 With this said, please allow me to introduce... my skeleton.
 
@@ -112,7 +112,7 @@ Personally, I like my whole team having the same kind of configuration, so I onl
 
 
 ###Manage.py
-Okay, maybe I've robbed this one from Django. It is so handy to have  a manage script though!
+Okay, maybe I've robbed this one from Django. It is so handy to have a manage script though!
 The five commands we are going to use the most are:
 
 #####Database and migration repository creation
@@ -164,7 +164,7 @@ Now comes the interesting part:
  If the route for the resource ```Father``` is like this  ```/api/v1/father``` it will be resting in the **views.py** in the package father under **v1** which is, as well, under the **api** package (```api/v1/father/views.py```).
   SO INTUITIVE.
  
- In every api's endpoint i like to have two files: 
+ In every api's endpoint I like to have two files: 
  
  * **views.py**: Here we find our endpoints.
 * **schemas.py**: Here we have our schemas. Also named "serializers" by them Django people.
@@ -177,11 +177,11 @@ Also, in the api's __init__.py we find initialization of stuff like auth by toke
 ###Tests
 Y'all like tests too much to not cover them in my skeleton.
 
-Just kidding, I've only coded a couple of tests as examples because this is really a boilerplate, and tests means more code to remove after the bootstraping.
+Just kidding, I've only coded a couple of tests as examples because this is really a boilerplate, and tests means more code to remove after the bootstrapping.
 Test structure is kinda the same as the **api** one but easier to grasp so don't worry, you'll be fine.
 One thing that is cool about this tests is that they run on an in-memory sqlite database, so they are fast! And fast to run tests mean more people liking tests, so it is a win win situation for everyone!
 
-I've coded a little API test client cause I don't know anything better. Please, enlighten me!
+I've coded a little API test client because I don't know anything better. Please, enlighten me!
 
 
 ###wsgi.py
