@@ -91,7 +91,7 @@ But don't be fooled, it isn't a real tree. It is an ASCII representation of the 
 </pre>
 
 ### The concept behind this skeleton
-I really like python for a bunch of reasons but the most important one is it's philosophy. It is simple, concise and _explicit_.
+I really like python for a bunch of reasons but the most important one is its philosophy. It is simple, concise and _explicit_.
 
 I tried other web frameworks like [Django](https://www.djangoproject.com/), but find them very confusing as they do a lot of heavy lifting behind the scenes, often hiding the logic behind it. Don't get me wrong, I like the project and know they have fantastic documentation, but the fact that I have to go looking at docs to get a grasp of what's going on in my own project really slows me down. And I like things very explicit.
 
