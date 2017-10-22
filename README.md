@@ -9,12 +9,12 @@ You have to have ```git``` installed as well as ```python3``` for this to work.
 You can either download it manually or use fancy commands like ```curl``` or ```wget```:
 
 ```
-curl -O https://gist.githubusercontent.com/JavierLuna/494cd8694498346e287b13d5d0733797/raw/d26e86662857f59eb4bc75f801017d7ce23b3b0c/flask-skeleton.sh
+curl -O https://gist.githubusercontent.com/JavierLuna/494cd8694498346e287b13d5d0733797/raw/d9d80b5f6036464aec10c9ceed1347a052b6b4d8/flask-skeleton.sh
 ```
 or
 
 ```
-wget https://gist.githubusercontent.com/JavierLuna/494cd8694498346e287b13d5d0733797/raw/d26e86662857f59eb4bc75f801017d7ce23b3b0c/flask-skeleton.sh
+wget https://gist.githubusercontent.com/JavierLuna/494cd8694498346e287b13d5d0733797/raw/d9d80b5f6036464aec10c9ceed1347a052b6b4d8/flask-skeleton.sh
 ```
 
 
