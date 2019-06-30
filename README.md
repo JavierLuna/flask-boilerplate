@@ -76,7 +76,8 @@ But don't be fooled, it isn't a real tree. It is an ASCII representation of the 
 ├── env
 │   
 ├── manage.py
-├── requirements.txt
+├── Pipfile
+├── Pipfile.lock
 ├── tests
 │   ├── __init__.py
 │   ├── api
@@ -187,6 +188,11 @@ I've coded a little API test client because I don't know anything better. Please
 ### wsgi.py
 This teeny tiny script is used to deploy later on. Let it be!
 
+### Pipfile and Pipfile.lock
+I decided to start using [Pipenv](https://github.com/pypa/pipenv) for this skeleton instead of `pip`.
+While I don't really like some aspects of `pipenv`, I think they are moving towards the right direction.
+Resolution of dependencies and their respective subdependencies, dependencies hash checking and security scans are a must nowadays.
+The usage of the tool is outside of this project, so I kindly suggest to read their [basics guide](https://docs.pipenv.org/en/latest/basics/).
 
 
 ## Farewell
